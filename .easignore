@@ -1,0 +1,200 @@
+# ===================================
+#  Expo EAS Ignore Configuration
+# ===================================
+# EAS uses this file (not .gitignore) to decide what gets packed
+# into the build tarball sent to EAS Build servers.
+# Anything listed here will NOT be uploaded.
+
+# ===================================
+#  Node / Bun / Dependencies
+# ===================================
+node_modules/
+bun.lockb
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# ---- Prevent macOS Trash errors ----
+/Users/gsadmin/.Trash
+.Trash/
+*/.Trash/
+Library/Mobile Documents/.Trash/
+
+# ===================================
+#  Expo & Metro Bundler
+# ===================================
+.expo/
+.expo-shared/
+.expo-dev/
+dist/
+web-build/
+build/
+.expo-env.d.ts
+.metro-health-check*
+*.packager-info.json
+*.expo-settings.json
+
+# ===================================
+#  Native Platforms
+# ===================================
+android/
+ios/
+*.apk
+*.aab
+*.keystore
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# ===================================
+#  macOS & System Folders
+# ===================================
+.DS_Store
+.DS_Store?
+.Trash/
+.Trashes/
+Library/
+Caches/
+Cache/
+__MACOSX/
+Spotlight-V100/
+.TemporaryItems/
+.fseventsd/
+
+# ===================================
+#  Browser Caches (Brave, Chrome, etc.)
+# ===================================
+*/BraveSoftware/
+*/Google/Chrome/
+*/Chromium/
+*/Application Support/BraveSoftware/
+*/Application Support/Google/
+*/Application Support/Chromium/
+
+# ===================================
+#  Environment & Secrets
+# ===================================
+.env
+.env.*
+.env*.local
+.envrc
+*.pem
+*.crt
+*.csr
+*.cer
+
+# ===================================
+#  Logs & Debug
+# ===================================
+*.log
+logs/
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# ===================================
+#  IDEs & Editors
+# ===================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*.tmp
+*.bak
+*.orig
+
+# ===================================
+#  Version Control
+# ===================================
+.git/
+.gitignore
+.gitattributes
+.gitmodules
+.hg/
+.svn/
+
+# ===================================
+#  Misc / Cloud
+# ===================================
+.vercel/
+.netlify/
+firebase-debug.log
+amplify/
+functions/node_modules/
+tmp/
+temp/
+*.zip
+*.tar
+*.tar.gz
+
+# ===================================
+#  Media / Assets (optional)
+# ===================================
+*.mov
+*.mp4
+*.avi
+*.psd
+*.xcf
+*.ai
+*.tif
+*.tiff
+# Ignore Trash everywhere
+.Trash/
+*/.Trash/
+Users/gsadmin/.Trash/
+Library/Mobile Documents/.Trash/
+
+# ===================================
+#  Documents
+# ===================================
+*.pdf
+*.docx
+*.rtf
+*.txt
+*.md
+# Block system folders outside project
+../
+~/
+Library/
+.Trash/
+Caches/
+Desktop/
+Documents/
+Downloads/
+
+# ---- Explicit Brave browser cache exclusion ----
+# ---- Browser caches ----
+Library/Caches/
+Library/Caches/BraveSoftware/
+Library/Caches/BraveSoftware/Brave-Browser/
+Library/Caches/BraveSoftware/Brave-Browser/Default/
+Library/Caches/BraveSoftware/Brave-Browser/Default/Cache/
+Library/Caches/BraveSoftware/Brave-Browser/Default/Cache/Cache_Data/
+
+/Users/gsadmin/.Trash
+/Users/gsadmin/Library/
+/Users/gsadmin/Library/Caches/
+/Users/gsadmin/Library/Application Support/
+/Users/gsadmin/Library/Containers/
+/Users/gsadmin/Library/Preferences/
+
+# ===================================
+#  Keep only essential project files
+# ===================================
+# (These are the files EAS *needs*)
+!app.json
+!app.config.js
+!eas.json
+!package.json
+!babel.config.js
+!tsconfig.json
+!metro.config.js
+!index.js
+!index.ts
+!index.tsx
+!assets/
+!src/
+!Public/
+

@@ -1,0 +1,55 @@
+import { DiseaseInfo } from '@/types/disease';
+import Colors from './colors';
+
+export const DISEASES: DiseaseInfo[] = [
+  {
+    id: 'normal',
+    name: 'Normal',
+    description: 'No abnormalities detected',
+    fullDescription: 'No eye disease detected. Clear vision with healthy appearance and no redness or swelling.',
+    symptoms: ['No redness', 'No swelling', 'Clear vision'],
+    riskFactors: [],
+    color: Colors.disease.normal,
+    icon: 'check-circle',
+  },
+  {
+    id: 'uveitis',
+    name: 'Uveitis',
+    description: 'Inflammation inside the eye',
+    fullDescription: 'Eye redness, pain, blurred vision, sensitivity to light, and floating spots. Inflammatory condition affecting the uveal tract.',
+    symptoms: ['Redness', 'Eye pain', 'Blurred vision', 'Photophobia', 'Floaters'],
+    riskFactors: [],
+    color: Colors.disease.uveitis,
+    icon: 'alert-circle',
+  },
+  {
+    id: 'conjunctivitis',
+    name: 'Conjunctivitis',
+    description: 'Inflammation of the conjunctiva',
+    fullDescription: 'Redness, itching, tearing, discharge, and crusting of the eyelids. Also known as pink eye.',
+    symptoms: ['Redness', 'Itching', 'Tearing', 'Discharge', 'Eyelid crusting'],
+    riskFactors: [],
+    color: Colors.disease.conjunctivitis,
+    icon: 'eye',
+  },
+  {
+    id: 'cataract',
+    name: 'Cataract',
+    description: 'Lens clouding',
+    fullDescription: 'Cloudy or blurred vision, difficulty seeing at night, and sensitivity to glare due to lens opacity.',
+    symptoms: ['Cloudy vision', 'Blurred vision', 'Night vision difficulty', 'Glare sensitivity'],
+    riskFactors: [],
+    color: Colors.disease.cataract,
+    icon: 'eye-off',
+  },
+  {
+    id: 'eyelid_drooping',
+    name: 'Eyelid Drooping',
+    description: 'Drooping or swollen eyelids',
+    fullDescription: 'Drooping eyelids, swelling, irritation, and lumps on more than one eyelid.',
+    symptoms: ['Drooping eyelids', 'Swelling', 'Irritation', 'Lumps on multiple eyelids'],
+    riskFactors: [],
+    color: Colors.disease.eyelid_drooping,
+    icon: 'chevron-down',
+  },
+];

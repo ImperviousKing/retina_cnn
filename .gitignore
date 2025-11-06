@@ -1,0 +1,80 @@
+# Learn more: https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+
+# ==========================
+# Node & Dependencies
+# ==========================
+node_modules/
+bun.lockb
+
+# ==========================
+# Expo / React Native
+# ==========================
+.expo/
+.expo-shared/
+dist/
+web-build/
+expo-env.d.ts
+android/
+ios/
+build/
+*.apk
+*.aab
+
+# ==========================
+# Native Credentials / Keys
+# ==========================
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# ==========================
+# Metro / Debug
+# ==========================
+.metro-health-check*
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# ==========================
+# macOS & System Cache
+# ==========================
+.DS_Store
+Library/
+Caches/
+__pycache__/
+Thumbs.db
+*.pem
+
+# ==========================
+# Local Environment
+# ==========================
+.env*
+.env*.local
+
+# ==========================
+# Editors & IDEs
+# ==========================
+.vscode/
+.idea/
+*.swp
+
+# ==========================
+# Logs
+# ==========================
+*.log
+logs/
+*.pid
+*.seed
+
+# ==========================
+# Misc
+# ==========================
+.vercel
+*.zip
+*.mov
+*.mp4
+
+.Trash/
